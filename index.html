@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Te Cuido PV · Comité de Innovación Corporativa Duoc UC</title>
+<title>Te Cuido PV · Pitch 7 minutos · Comité de Innovación Corporativa Duoc UC</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -73,7 +73,12 @@ body{background:#0d0f11;color:var(--carbon);font-family:var(--f-txt);overflow:hi
 .portada-txt .meta{margin-top:48px;font-size:19px;letter-spacing:.14em;text-transform:uppercase;color:var(--gris-sec);line-height:1.9}
 
 /* 2 · ORIGEN */
-.origen{grid-column:1/13;display:grid;grid-template-columns:repeat(3,1fr);column-gap:24px;align-items:start;height:560px;align-content:center}
+.origen{grid-column:1/13;display:grid;grid-template-columns:repeat(4,1fr);column-gap:24px;align-items:start;height:560px;align-content:center}
+.h4x{grid-column:1/13;display:grid;grid-template-columns:repeat(4,1fr);column-gap:22px;height:560px;align-content:center}
+.h4x .caso figure{height:300px}
+.h4x .caso figure{border:1px solid var(--amarillo);box-sizing:border-box}
+.h4x .caso h3{margin-top:14px;font-size:20px;line-height:1.25}
+.h4x .caso p{margin-top:6px;font-size:17px;line-height:1.4;color:var(--gris)}
 .caso figure{width:100%;height:392px;overflow:hidden;background:var(--gris-claro);border-radius:18px;box-shadow:0 22px 44px -26px rgba(33,33,33,.45)}
 .caso img{width:100%;height:100%;object-fit:cover;display:block}
 .caso p{margin-top:18px;font-family:var(--f-tit);font-weight:600;font-size:25px;line-height:1.28}
@@ -100,26 +105,29 @@ body{background:#0d0f11;color:var(--carbon);font-family:var(--f-txt);overflow:hi
 .ruta-txt .dt em{font-style:normal;font-family:var(--f-tit);font-weight:700;font-size:26px;letter-spacing:-.01em}
 .ruta-1 .dt em{color:var(--naranja)} .ruta-2 .dt em{color:var(--verde)}
 
-/* 4 · EVIDENCIA (87% bisagra a la izq · otros datos a la der) */
-.ev4{grid-column:1/13;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);column-gap:60px;align-items:center;height:560px}
-.ev4-hinge{text-align:center}
-.ev4-hinge .num{font-family:var(--f-tit);font-weight:700;font-size:236px;line-height:.82;letter-spacing:-.05em;filter:drop-shadow(0 8px 16px rgba(33,33,33,.22));
-  background:linear-gradient(180deg,var(--naranja) 0 50%,var(--verde) 50% 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
-.ev4-hinge .lines{display:flex;flex-direction:column;gap:8px;margin-top:16px}
-.ev4-hinge .lines p{font-family:var(--f-tit);font-weight:300;font-size:27px;line-height:1.2;color:var(--carbon)}
-.ev4-hinge .l-no b{font-weight:700;color:var(--naranja)}
-.ev4-hinge .l-si b{font-weight:700;color:var(--verde)}
-.ev4-stats{border-left:1px solid var(--gris-claro);padding-left:52px;display:flex;flex-direction:column;gap:26px}
-.ev4-stat .top{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
-.ev4-stat .lab{font-size:19px;color:var(--gris);line-height:1.3;max-width:20ch}
-.ev4-stat .n{font-family:var(--f-tit);font-weight:700;font-size:40px;line-height:1;letter-spacing:-.02em}
-.ev4-stat .track{height:10px;background:var(--gris-claro);border-radius:6px;overflow:hidden;margin-top:10px}
-.ev4-stat .track i{display:block;height:100%;width:0;border-radius:6px;transition:width 1.1s var(--ease) .3s}
-.slide.activa .ev4-stat .track i{width:var(--w)}
-.ev4-stat.s1 .n{color:var(--naranja)} .ev4-stat.s1 i{background:var(--naranja)}
-.ev4-stat.s2 .n{color:var(--verde)} .ev4-stat.s2 i{background:var(--verde)}
-.ev4-stat.s3 .n{color:var(--verde)} .ev4-stat.s3 i{background:var(--verde)}
-.ev4-foot{font-size:16px;color:var(--gris-sec);margin-top:2px}
+/* 4 · EVIDENCIA (27% entrada · 87% disposición protagonista) */
+.ev4{grid-column:1/13;display:grid;grid-template-columns:2.3fr 4.4fr 3.3fr;column-gap:44px;align-items:center;height:560px}
+.ev-entrada{border-right:1px solid var(--gris-claro);padding-right:40px}
+.ev-entrada .n{font-family:var(--f-tit);font-weight:700;font-size:96px;line-height:.95;letter-spacing:-.035em;color:var(--naranja)}
+.ev-entrada p{margin-top:12px;font-size:21px;line-height:1.35;color:var(--carbon);max-width:15ch}
+.ev-entrada .track{height:10px;background:var(--gris-claro);border-radius:6px;overflow:hidden;margin-top:14px}
+.ev-entrada .track i{display:block;height:100%;width:0;background:var(--naranja);border-radius:6px;transition:width 1.1s var(--ease) .3s}
+.slide.activa .ev-entrada .track i{width:27%}
+.ev-centro{text-align:center}
+.ev-centro .et{display:inline-block;font-size:17px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--verde);
+  background:var(--verde-claro);border-radius:999px;padding:7px 18px;margin-bottom:10px}
+.ev-centro .num{margin:16px 0 8px;font-family:var(--f-tit);font-weight:700;font-size:192px;line-height:.85;letter-spacing:-.05em;color:var(--verde);
+  filter:drop-shadow(0 8px 16px rgba(33,33,33,.18))}
+.ev-centro .sub{margin-top:10px;font-family:var(--f-tit);font-weight:300;font-size:26px;line-height:1.25;color:var(--carbon)}
+.ev-centro .sub strong{font-weight:600}
+.ev-stats{border-left:1px solid var(--gris-claro);padding-left:40px;display:flex;flex-direction:column;gap:22px}
+.ev-stat .top{display:flex;justify-content:space-between;align-items:baseline;gap:14px}
+.ev-stat .lab{font-size:18px;color:var(--gris);line-height:1.3;max-width:18ch}
+.ev-stat .n{font-family:var(--f-tit);font-weight:700;font-size:34px;line-height:1;color:var(--verde)}
+.ev-stat .track{height:8px;background:var(--gris-claro);border-radius:5px;overflow:hidden;margin-top:8px}
+.ev-stat .track i{display:block;height:100%;width:0;background:var(--verde);border-radius:5px;transition:width 1.1s var(--ease) .4s}
+.slide.activa .ev-stat .track i{width:var(--w)}
+.ev-foot{font-size:16px;color:var(--gris-sec);margin-top:2px}
 
 /* 5 · INSIGHT */
 .sl-insight #canvasRed{position:absolute;inset:0;width:1600px;height:900px;opacity:.55;z-index:0}
@@ -132,18 +140,18 @@ body{background:#0d0f11;color:var(--carbon);font-family:var(--f-txt);overflow:hi
 /* 6 · PROPUESTA (tarjetas) */
 .prop-frase{grid-column:1/13;text-align:center;font-size:34px;margin-bottom:40px}
 .abd{grid-column:1/13;display:grid;grid-template-columns:1fr 56px 1fr 56px 1fr;align-items:stretch;column-gap:0}
-.abd .card{display:flex;flex-direction:column;justify-content:flex-start;gap:16px;min-height:300px;
+.abd .card{display:grid;grid-template-rows:56px auto 1fr;align-content:start;min-height:300px;
   padding:34px 30px;border-radius:18px;box-shadow:0 18px 40px -28px rgba(33,33,33,.35);text-align:left}
 .abd .card.antes{background:var(--blanco);border:1px solid var(--gris-claro)}
-.abd .card.mid{background:var(--carbon);color:var(--calido);box-shadow:0 22px 50px -24px rgba(33,33,33,.6);transform:translateY(-14px)}
+.abd .card.mid{background:var(--carbon);color:var(--calido);box-shadow:0 22px 50px -24px rgba(33,33,33,.6)}
 .abd .card.fin{background:var(--verde-claro)}
-.abd .card .ico{width:56px;height:56px;padding:14px;border-radius:50%;box-sizing:border-box}
+.abd .card .ico{grid-row:1;width:56px;height:56px;padding:14px;border-radius:50%;box-sizing:border-box}
 .abd .card.antes .ico{color:var(--naranja);background:rgba(232,154,43,.14)}
 .abd .card.mid .ico{color:var(--amarillo);background:rgba(255,183,26,.18)}
 .abd .card.fin .ico{color:var(--verde);background:rgba(74,124,63,.16)}
-.abd .et{font-size:17px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--gris)}
+.abd .et{grid-row:2;margin-top:26px;font-size:17px;line-height:1;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--gris)}
 .abd .card.mid .et{color:var(--amarillo)}
-.abd p{font-family:var(--f-tit);font-weight:300;font-size:26px;line-height:1.3;margin-top:auto}
+.abd p{grid-row:3;margin-top:20px;font-family:var(--f-tit);font-weight:300;font-size:26px;line-height:1.3}
 .abd .card.antes p{color:var(--carbon)}
 .abd .card.mid p{color:var(--calido);font-weight:600}
 .abd .card.fin p{color:#31462B}
@@ -174,6 +182,71 @@ body{background:#0d0f11;color:var(--carbon);font-family:var(--f-txt);overflow:hi
 .vctrl button:hover{border-color:var(--naranja);color:var(--naranja)}
 .fallback{position:absolute;inset:0;display:none;flex-direction:column;gap:10px;align-items:center;justify-content:center;padding:22px;text-align:center;background:#1B1B1B;color:var(--gris-claro);font-size:17px}
 .fallback.on{display:flex}
+
+/* 7 · RED DE CUIDADO EN EL BOLSILLO */
+.bols{grid-column:1/13;display:grid;grid-template-columns:1fr auto 1fr;column-gap:44px;align-items:center;height:560px}
+.bols-col{display:flex;flex-direction:column;gap:26px}
+.bfn{display:grid;grid-template-columns:auto 1fr;gap:15px;align-items:center}
+.bols-col.izq .bfn{grid-template-columns:1fr auto;text-align:right}
+.bfn .ico{width:44px;height:44px;padding:10px;border-radius:50%;box-sizing:border-box;background:rgba(232,154,43,.13);color:var(--naranja)}
+.bols-col.der .bfn .ico{background:rgba(74,124,63,.14);color:var(--verde)}
+.bfn b{display:block;font-family:var(--f-tit);font-weight:600;font-size:21px;line-height:1.15}
+.bfn small{display:block;margin-top:3px;font-size:17px;color:var(--gris)}
+.bols-tel{width:240px;border:9px solid var(--carbon);border-radius:30px;overflow:hidden;background:#0E1520;box-shadow:0 30px 60px -40px rgba(33,33,33,.7)}
+.bols-tel img{width:100%;display:block}
+
+/* 9 · PLAN DE PROTOTIPADO (5 estaciones) */
+.plan5{grid-column:1/13;display:grid;grid-template-columns:repeat(6,1fr);gap:22px 24px;height:560px;align-content:center}
+.pl{grid-column:span 2;background:var(--blanco);border:1px solid var(--gris-claro);border-top:4px solid var(--naranja);
+  border-radius:14px;padding:22px 22px 20px;box-shadow:0 16px 36px -30px rgba(33,33,33,.45)}
+.pl:nth-child(2){border-top-color:var(--naranja-2)} .pl:nth-child(3){border-top-color:var(--amarillo)}
+.pl:nth-child(4){grid-column:2/5;border-top-color:#8FA96E} .pl:nth-child(5){grid-column:5/8;border-top-color:var(--verde)}
+.pl .ico{width:32px;height:32px;color:var(--carbon);display:block;margin-bottom:10px}
+.pl b{display:block;font-family:var(--f-tit);font-weight:600;font-size:20px;margin-bottom:8px}
+.pl p{font-size:17px;line-height:1.45;color:var(--gris)}
+
+/* 11 · RECURSOS E IMPACTO (presupuesto secundario) */
+.rec{grid-column:1/7;align-self:center}
+.rec .et{font-size:17px;letter-spacing:.16em;text-transform:uppercase;color:var(--gris);font-weight:600;margin-bottom:16px}
+.rec-tab{width:100%;border-collapse:collapse;font-size:19px}
+.rec-tab td{padding:11px 0;border-bottom:1px solid var(--gris-claro);vertical-align:middle}
+.rec-tab td.m{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--carbon)}
+.rec-tab td.p{text-align:right;width:74px;font-family:var(--f-tit);font-weight:600;color:var(--gris)}
+.rec-tab tr.tot td{border-bottom:none;padding-top:14px;font-family:var(--f-tit);font-weight:700;color:var(--carbon)}
+.rec-hab{margin-top:20px;display:flex;flex-direction:column;gap:9px}
+.rec-hab li{list-style:none;font-size:18px;color:var(--gris);padding-left:22px;position:relative;line-height:1.4}
+.rec-hab li::before{content:'';position:absolute;left:0;top:9px;width:9px;height:9px;border-radius:50%;background:var(--naranja)}
+.rec .btn-modal{margin-top:18px;background:none;border:1px solid var(--gris-sec);color:var(--carbon);padding:10px 16px;font-size:17px;font-family:var(--f-txt);cursor:pointer}
+.rec .btn-modal:hover{border-color:var(--naranja);color:var(--naranja)}
+
+/* 12 · PROYECCIÓN */
+.proy3{grid-column:1/13;display:grid;grid-template-columns:repeat(3,1fr);column-gap:26px;position:relative;align-content:center}
+.proy3::before{display:none}
+.pr3{position:relative;display:grid;grid-template-rows:36px 46px auto}
+.pr3::after{content:'';position:absolute;top:57px;left:0;right:-26px;height:2px;background:var(--naranja)}
+.pr3:nth-child(2)::after{background:var(--naranja-2)} .pr3:nth-child(3)::after{background:var(--verde);right:0}
+.pr3::before{content:'';position:absolute;top:49px;left:0;width:18px;height:18px;border-radius:50%;background:var(--naranja);border:3px solid var(--calido);z-index:2}
+.pr3:nth-child(2)::before{background:var(--naranja-2)} .pr3:nth-child(3)::before{background:var(--verde)}
+.pr3 b{grid-row:1;align-self:start;display:block;font-family:var(--f-tit);font-weight:600;font-size:26px;line-height:1.15}
+.pr3 p{grid-row:3;margin-top:6px;font-size:19px;line-height:1.5;color:var(--gris);max-width:26ch}
+
+/* 13 · IMPACTO INSTITUCIONAL */
+.imp6{grid-column:1/13;display:grid;grid-template-columns:repeat(3,1fr);gap:20px 26px;align-content:center}
+.im6{background:var(--blanco);border:1px solid var(--gris-claro);border-left:4px solid var(--verde);border-radius:12px;padding:20px 22px}
+.im6 b{display:block;font-family:var(--f-tit);font-weight:600;font-size:21px;line-height:1.2}
+.im6 span{display:block;margin-top:7px;font-size:17px;color:var(--gris);line-height:1.4}
+
+/* 14 · CIERRE CIRCULAR */
+.sl-circ{overflow:hidden}
+.circ-foto{position:absolute;inset:0;background:url('fondofinal.jpg') center center/cover no-repeat;filter:brightness(1.55) contrast(1.08)}
+.circ-velo{position:absolute;inset:0;background:linear-gradient(90deg,rgba(21,24,26,.93) 0%,rgba(21,24,26,.88) 34%,rgba(21,24,26,.60) 60%,rgba(21,24,26,.34) 100%)}
+.sl-circ .cab,.sl-circ .cuerpo,.sl-circ .pie{position:relative;z-index:2}
+.circ{grid-column:1/8;align-self:center}
+.circ p{font-family:var(--f-tit);font-weight:300;font-size:31px;line-height:1.35;color:var(--gris-claro);margin-bottom:14px;
+  opacity:0;animation:fade .8s var(--ease) forwards;animation-delay:calc(.25s + var(--i)*.7s)}
+.circ .eso{color:var(--blanco);font-weight:600}
+.circ .final{margin-top:20px;font-size:46px;line-height:1.2;color:var(--blanco)}
+.circ .final strong{color:var(--naranja);font-weight:700}
 
 /* 8 · QUÉ QUEREMOS COMPROBAR */
 .sl-preg .preg-q{grid-column:1/8;font-family:var(--f-tit);font-weight:300;font-size:52px;line-height:1.16;color:var(--blanco);align-self:center}
@@ -209,7 +282,7 @@ body{background:#0d0f11;color:var(--carbon);font-family:var(--f-txt);overflow:hi
 .sl-kpis .pie{grid-row:3;height:56px;display:flex;align-items:center;justify-content:center;
   background:var(--carbon);color:var(--blanco);border-radius:12px;margin:0 -8px;
   font-family:var(--f-tit);font-weight:600;font-size:24px;text-align:center}
-.sl-kpis .pie strong{color:var(--amarillo);margin-left:10px}
+.sl-kpis .pie strong{color:var(--amarillo)}
 
 /* 10 · INVERSIÓN E IMPACTO */
 .inv{grid-column:1/7;align-self:center}
@@ -258,11 +331,13 @@ body{background:#0d0f11;color:var(--carbon);font-family:var(--f-txt);overflow:hi
 .sol-final .cf strong{color:var(--naranja);font-weight:700}
 
 /* 12 · EQUIPO Y FRASE FINAL */
-.sl-equipo{grid-template-rows:360px 400px;row-gap:16px;align-content:center}
-.eq-frase{grid-row:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;text-align:center;padding-bottom:24px}
-.eq-frase .cl{font-family:var(--f-tit);font-weight:300;font-size:40px;color:var(--gris-claro);line-height:1.25;margin-bottom:12px}
-.eq-frase .cf{font-family:var(--f-tit);font-weight:300;font-size:76px;line-height:1.1;color:var(--blanco);letter-spacing:-.02em}
-.eq-frase .cf strong{color:var(--naranja);font-weight:700}
+.sl-equipo{grid-template-rows:300px 460px;row-gap:16px;align-content:center;overflow:hidden}
+.eq-foto{position:absolute;inset:0;background:url('portada.jpg') center 40%/cover no-repeat;opacity:.62;filter:saturate(.72) contrast(1.02)}
+.eq-velo{position:absolute;inset:0;background:linear-gradient(180deg,rgba(21,24,26,.58) 0%,rgba(21,24,26,.70) 34%,rgba(21,24,26,.86) 62%,rgba(21,24,26,.92) 100%)}
+.sl-equipo .eq-frase,.sl-equipo .cuerpo{position:relative;z-index:2}
+.eq-frase{grid-row:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding-top:44px}
+.eq-frase .cf{font-family:var(--f-tit);font-weight:300;font-size:58px;line-height:1.12;color:var(--blanco);letter-spacing:-.02em;white-space:nowrap;text-shadow:0 2px 18px rgba(10,12,14,.7)}
+.eq-frase .cf strong{color:var(--amarillo);font-weight:700}
 .sl-equipo .cuerpo{grid-row:2;height:460px;align-content:center}
 .equipo-final{grid-column:2/12;align-self:center;text-align:center}
 .equipo-final::before{content:"";display:block;width:240px;height:2px;background:rgba(154,160,166,.35);margin:0 auto 30px}
@@ -270,9 +345,10 @@ body{background:#0d0f11;color:var(--carbon);font-family:var(--f-txt);overflow:hi
 .ef-row{display:grid;grid-template-columns:repeat(4,1fr);column-gap:40px}
 .ef-per{text-align:center}
 .ef-per img{width:130px;height:130px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 14px;background:#2C2C2C}
-.ef-per b{display:block;font-family:var(--f-tit);font-weight:600;font-size:20px;color:var(--blanco);line-height:1.15}
-.ef-per span{display:block;margin-top:5px;font-size:16px;color:var(--gris-sec);line-height:1.3}
-.ef-apoyo{margin-top:28px;font-size:18px;color:var(--gris-sec);line-height:1.5}
+.ef-per b{display:block;font-family:var(--f-tit);font-weight:600;font-size:20px;color:var(--blanco);line-height:1.15;text-shadow:0 1px 10px rgba(10,12,14,.8)}
+.ef-per span{display:block;margin-top:5px;font-size:16px;color:var(--gris-claro);line-height:1.3;text-shadow:0 1px 10px rgba(10,12,14,.8)}
+.ef-per em{display:block;margin-top:6px;font-style:normal;font-size:15px;color:var(--verde-claro);line-height:1.35}
+.ef-apoyo{margin-top:28px;font-size:18px;color:var(--gris-claro);line-height:1.5;text-shadow:0 1px 10px rgba(10,12,14,.8)}
 
 /* ===== ANEXOS ===== */
 .anexo .cab .tag{display:inline-block;font-size:15px;letter-spacing:.16em;text-transform:uppercase;color:var(--naranja);font-weight:600;margin-bottom:4px}
@@ -351,12 +427,69 @@ body{background:#0d0f11;color:var(--carbon);font-family:var(--f-txt);overflow:hi
   .sube,.br{opacity:1;transform:none} .traza{stroke-dashoffset:0} .foto,.nubes,.cierre-foto{animation:none}
   .slide.activa .br .track i,.slide.activa .inv .cat .barra i{transition:none}
 }
+
+/* ---- pie: el contenido va en un span para conservar los espacios ---- */
+.pie>span{display:block}
+.pie-2{grid-row:3;height:56px;display:flex;flex-direction:column;justify-content:center;gap:3px}
+.pie-2 .p1{font-size:19px;line-height:1.25;color:var(--gris)}
+.pie-2 .p1 strong{color:var(--carbon);font-weight:600}
+.pie-2 .p2{font-size:14px;font-style:italic;color:var(--gris-sec);line-height:1.2}
+
+/* ---- diapo 8 · tres tarjetas iguales al pie ---- */
+.pcards{grid-row:3;height:56px;display:grid;grid-template-columns:repeat(3,1fr);column-gap:20px;align-items:stretch}
+.pcards .pc{display:grid;grid-template-columns:24px 1fr;column-gap:11px;align-items:center;
+  background:var(--blanco);border:1px solid var(--gris-claro);border-radius:10px;padding:0 14px;box-sizing:border-box;height:56px}
+.pcards .pc i{font-style:normal;width:24px;height:24px;border-radius:50%;background:var(--amarillo);color:var(--carbon);
+  display:grid;place-items:center;font-family:var(--f-tit);font-weight:700;font-size:13px}
+.pcards .pc span{font-size:16px;line-height:1.2;color:var(--gris);display:block}
+.pcards .pc-fin{border-color:rgba(74,124,63,.4)}
+.pcards .pc-fin i{background:var(--verde);color:var(--blanco)}
+.pcards .pc-fin span{color:var(--verde);font-weight:500}
+.ef-per span{min-height:42px}
+
+/* ---- diapo 9 · cinco tarjetas idénticas, fila inferior centrada ---- */
+.plan5{grid-column:1/13;display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:1fr 1fr;gap:24px;height:560px}
+.pl{grid-column:span 4;height:100%;box-sizing:border-box;display:flex;flex-direction:column}
+.pl:nth-child(4){grid-column:3/7} .pl:nth-child(5){grid-column:7/11}
+
+/* ---- diapo 11 · qué gana Duoc UC sobre la fotografía ---- */
+.sl-gana{overflow:hidden}
+.gana-foto{position:absolute;inset:0;background:url('fondochica.jpg') center right/cover no-repeat}
+.gana-velo{position:absolute;inset:0;background:linear-gradient(90deg,
+  rgba(250,250,250,.985) 0%,rgba(250,250,250,.96) 34%,rgba(250,250,250,.62) 47%,rgba(250,250,250,.12) 56%,rgba(250,250,250,0) 64%)}
+.sl-gana .cab,.sl-gana .cuerpo{position:relative;z-index:2}
+.gana2{grid-column:1/7;align-self:center}
+.gana2 ul{list-style:none;display:flex;flex-direction:column;gap:13px}
+.gana2 li{font-size:23px;color:var(--carbon);padding-left:26px;position:relative;line-height:1.25}
+.gana2 li::before{content:'';position:absolute;left:0;top:9px;width:11px;height:11px;border-radius:50%;background:var(--verde)}
+.gana-frase{margin-top:26px;background:var(--blanco);border-left:4px solid var(--verde);border-radius:10px;padding:16px 20px;
+  font-family:var(--f-tit);font-weight:300;font-size:22px;line-height:1.32;color:var(--gris);box-shadow:0 18px 40px -30px rgba(33,33,33,.5)}
+.gana-frase strong{font-weight:600;color:var(--carbon)}
+
+/* ---- diapo 15 · imagen de cierre a sangre ---- */
+.sl-cierre{padding:0;display:block;background:var(--hondo);overflow:hidden}
+.cierre-img{position:absolute;inset:0;width:1600px;height:900px;object-fit:cover;display:block}
+
+/* ---- botón del presupuesto en el anexo ---- */
+.btn-modal-anx{position:absolute;right:96px;bottom:60px;z-index:3;background:none;border:1px solid var(--gris-sec);
+  color:var(--carbon);padding:10px 16px;font-size:17px;font-family:var(--f-txt);cursor:pointer;border-radius:6px}
+.btn-modal-anx:hover{border-color:var(--naranja);color:var(--naranja)}
+
+
+/* ---- diapo 3 · pie a dos bloques (necesita más alto que el pie estándar) ---- */
+.sl-mapa{grid-template-rows:100px 508px 108px}
+.sl-mapa .cuerpo{height:508px}
+.sl-mapa .mapa-fig{height:508px}
+.sl-mapa .mapa-fig img{max-height:462px}
+.pie-3{grid-row:3;height:108px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.pie-3 .l1{font-size:18px;line-height:1.4;color:var(--gris)}
+.pie-3 .l2{font-size:18px;line-height:1.4;font-weight:600;color:var(--carbon)}
 </style>
 </head>
 <body>
 <div id="viewport"><div id="stage"><main id="deck">
 
-<!-- ========== PITCH (11) ========== -->
+<!-- ========== PITCH (15 diapositivas) ========== -->
 
 <!-- 1 · PORTADA -->
 <section class="slide sl-portada oscuro" data-osc="1" data-pitch="1" aria-label="Portada">
@@ -371,48 +504,56 @@ body{background:#0d0f11;color:var(--carbon);font-family:var(--f-txt);overflow:hi
 </section>
 
 <!-- 2 · ORIGEN -->
-<section class="slide claro" data-pitch="1" aria-label="El origen">
+<section class="slide claro" data-pitch="1" aria-label="Historias reales">
   <header class="cab">
     <h2 class="titulo">Todo empezó con historias reales</h2>
   </header>
   <div class="cuerpo">
-    <div class="origen">
+    <div class="h4x">
       <article class="caso sube" style="--i:0">
         <figure><img src="caso1.jpg" alt="Estudiante usuaria de silla de ruedas en la sede"></figure>
-        <p>El ascensor del Metro, días sin servicio.<span>La cargaron desconocidos por las escaleras.</span></p>
+        <h3>Sin ascensor en el Metro</h3>
+        <p>Estuvo días sin acceso, la cargaron desconocidos por las escaleras.</p>
       </article>
       <article class="caso sube" style="--i:1">
-        <figure><img src="caso2.jpg" alt="Estudiante caminando con muletas"></figure>
-        <p>Con muletas, camino a la sede.<span>Cayó, se golpeó y la auxiliaron transeúntes.</span></p>
+        <figure><img src="caso2.jpg" alt="Estudiante caminando solo de noche hacia el Metro"></figure>
+        <h3>Vuelven solos al Metro</h3>
+        <p>Cada noche, estudiantes vespertinos hacen el trayecto sin compañía.</p>
       </article>
       <article class="caso sube" style="--i:2">
-        <figure><img src="caso3.jpg" alt="Estudiante caminando solo de noche"></figure>
-        <p>Cada noche, de vuelta al Metro.<span>Estudiantes vespertinos caminan solos.</span></p>
+        <figure><img src="caso3.jpg" alt="Estudiante caminando con muletas hacia la sede"></figure>
+        <h3>Cayó camino a la sede</h3>
+        <p>Iba con muletas, se golpeó y la auxiliaron transeúntes.</p>
+      </article>
+      <article class="caso sube" style="--i:3">
+        <figure><img src="caso4.jpg" alt="Estudiante sentado en la vereda de noche, cerca de la sede"></figure>
+        <h3>Atropellado cerca de la sede</h3>
+        <p>Ocurrió de noche, no supo a quién acudir dentro de su comunidad.</p>
       </article>
     </div>
   </div>
-  <p class="pie pie-mark">En cada caso, la ayuda estaba cerca. <strong>Pero nadie sabía que era necesaria.</strong></p>
+  <p class="pie pie-mark"><span>En cada caso, la ayuda estaba cerca, <strong>pero nadie sabía que era necesaria.</strong></span></p>
 </section>
 
 <!-- 3 · EL PROBLEMA OCURRE AQUÍ -->
-<section class="slide crema" data-pitch="1" aria-label="El problema ocurre aquí">
+<section class="slide crema sl-mapa" data-pitch="1" aria-label="El problema ocurre aquí">
   <header class="cab">
     <h2 class="titulo">El problema ocurre aquí</h2>
     <p class="sub">A minutos de la sede, todos los días</p>
   </header>
   <div class="cuerpo">
     <figure class="mapa-fig sube" style="--i:0">
-      <img src="mapa.jpg" alt="Mapa de rutas: Sede Principal a Metro Vicuña Mackenna 610 m 8 min; Sede Boulevard a Metro Bellavista de La Florida 485 m 6 min">
+      <img src="mapa.jpg" alt="Mapa de rutas de acceso a la sede: Sede Principal a Metro Vicuña Mackenna, 610 m y aproximadamente 12 minutos caminando; Sede Boulevard a Metro Bellavista de La Florida, 485 m y aproximadamente 10 minutos caminando">
     </figure>
     <div class="mapa-txt sube" style="--i:1">
-      <p class="frase">El acompañamiento institucional termina en la sede.<br><strong class="naranja">La vulnerabilidad continúa en el trayecto.</strong></p>
+      <p class="frase">El acompañamiento institucional termina en la sede,<br><strong class="naranja">la vulnerabilidad continúa en el trayecto.</strong></p>
       <div class="rutas">
         <div class="ruta ruta-1">
           <span class="pt" aria-hidden="true"></span>
           <div class="ruta-txt">
             <b>Sede Principal</b>
             <span class="dest">→ Metro Vicuña Mackenna</span>
-            <span class="dt"><em>610 m</em> · ≈ 8 min caminando</span>
+            <span class="dt"><em>610 m</em> · ≈ 12 min caminando</span>
           </div>
         </div>
         <div class="ruta ruta-2">
@@ -420,48 +561,50 @@ body{background:#0d0f11;color:var(--carbon);font-family:var(--f-txt);overflow:hi
           <div class="ruta-txt">
             <b>Sede Boulevard</b>
             <span class="dest">→ Metro Bellavista de La Florida</span>
-            <span class="dt"><em>485 m</em> · ≈ 6 min caminando</span>
+            <span class="dt"><em>485 m</em> · ≈ 10 min caminando</span>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <p class="pie">Accidentes · barreras de movilidad · crisis de pánico · acoso · trayectos nocturnos. No buscamos hacernos cargo de la seguridad del sector: buscamos ampliar la capacidad de acompañamiento de la comunidad.</p>
+  <div class="pie-3">
+    <p class="l1">Accidentes · barreras de movilidad · crisis de pánico · acoso · trayectos nocturnos.</p>
+    <p class="l2">No buscamos hacernos cargo de la seguridad del sector, buscamos ampliar la capacidad de acompañamiento de la comunidad.</p>
+  </div>
 </section>
 
 <!-- 4 · LA EVIDENCIA -->
 <section class="slide blanco" data-pitch="1" aria-label="La evidencia">
   <header class="cab">
-    <h2 class="titulo">No es una percepción. Está validado.</h2>
+    <h2 class="titulo">No es una percepción, está validado</h2>
     <p class="sub">Encuesta a 462 estudiantes y colaboradores de la sede</p>
   </header>
   <div class="cuerpo">
     <div class="ev4">
-      <div class="ev4-hinge sube" style="--i:0">
-        <div class="num">87%</div>
-        <div class="lines">
-          <p class="l-no"><b>No recibió apoyo</b> institucional de quienes vivieron un riesgo</p>
-          <p class="l-si"><b>Sí estaría dispuesto a ayudar</b> a otro estudiante</p>
-        </div>
+      <div class="ev-entrada sube" style="--i:0">
+        <div class="n">27%</div>
+        <p>ha vivido una situación de riesgo en sus trayectos</p>
+        <div class="track"><i></i></div>
       </div>
-      <div class="ev4-stats sube" style="--i:1">
-        <div class="ev4-stat s1" style="--w:27%">
-          <div class="top"><span class="lab">Ha vivido una situación de riesgo</span><span class="n">27%</span></div>
-          <div class="track"><i></i></div>
-        </div>
-        <div class="ev4-stat s2" style="--w:97.2%">
+      <div class="ev-centro sube" style="--i:1">
+        <span class="et">Disposición a ayudar</span>
+        <div class="num">87%</div>
+        <p class="sub">de la comunidad estaría dispuesta a ayudar a otro estudiante.<br><strong>La comunidad ya quiere ayudarse.</strong></p>
+      </div>
+      <div class="ev-stats sube" style="--i:2">
+        <div class="ev-stat" style="--w:97.2%">
           <div class="top"><span class="lab">Considera útil una herramienta así</span><span class="n">97,2%</span></div>
           <div class="track"><i></i></div>
         </div>
-        <div class="ev4-stat s3" style="--w:92%">
+        <div class="ev-stat" style="--w:92%">
           <div class="top"><span class="lab">La descargaría y usaría</span><span class="n">92%</span></div>
           <div class="track"><i></i></div>
         </div>
-        <p class="ev4-foot">Sobre 462 respuestas de la comunidad.</p>
+        <p class="ev-foot">Sobre 462 respuestas de la comunidad.</p>
       </div>
     </div>
   </div>
-  <p class="pie">La misma cifra que muestra la brecha muestra también la solución: <strong>la comunidad ya quiere ayudar.</strong></p>
+  <p class="pie"><span>El problema es real y frecuente y, <strong>la comunidad ya está dispuesta a responder.</strong></span></p>
 </section>
 
 <!-- 5 · INSIGHT -->
@@ -470,11 +613,11 @@ body{background:#0d0f11;color:var(--carbon);font-family:var(--f-txt);overflow:hi
   <header class="cab"><h2 class="titulo">Y ahí está la oportunidad</h2></header>
   <div class="cuerpo">
     <div class="insight">
-      <p class="big">La comunidad <strong>quiere ayudarse.</strong><br>Solo necesita una forma de conectarse.</p>
-      <p class="cierre">La red ya existe. Solo falta activarla.</p>
+      <p class="big">La comunidad <strong>quiere ayudarse,</strong><br>solo necesita una forma de conectarse.</p>
+      <p class="cierre">La red ya existe, solo falta activarla.</p>
     </div>
   </div>
-  <p class="pie">No estamos construyendo una app. Estamos construyendo una red de cuidado comunitario.</p>
+  <p class="pie"><span>No estamos construyendo una app, estamos construyendo una red de cuidado comunitario.</span></p>
 </section>
 
 <!-- 6 · LA PROPUESTA -->
@@ -504,24 +647,65 @@ body{background:#0d0f11;color:var(--carbon);font-family:var(--f-txt);overflow:hi
       </div>
     </div>
   </div>
-  <p class="pie">La tecnología activa la conexión; la comunidad entrega el cuidado. <strong>No reemplaza servicios de emergencia ni protocolos institucionales.</strong></p>
+  <p class="pie"><span>La tecnología activa la conexión, la comunidad entrega el cuidado. <strong>No reemplaza servicios de emergencia ni protocolos institucionales.</strong></span></p>
 </section>
 
-<!-- 7 · CÓMO FUNCIONA + PROTOTIPO -->
+<!-- 7 · UNA RED DE CUIDADO EN EL BOLSILLO -->
+<section class="slide crema" data-pitch="1" aria-label="Una red de cuidado en el bolsillo">
+  <header class="cab">
+    <h2 class="titulo">Una red de cuidado en el bolsillo</h2>
+    <p class="sub">No son herramientas aisladas, son formas de activar la misma red</p>
+  </header>
+  <div class="cuerpo">
+    <div class="bols">
+      <div class="bols-col izq">
+        <div class="bfn sube" style="--i:0">
+          <div><b>Botón SOS</b><small>Hace visible que alguien necesita apoyo</small></div>
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2"/></svg>
+        </div>
+        <div class="bfn sube" style="--i:1">
+          <div><b>Caminemos Juntos</b><small>Coordina trayectos compartidos</small></div>
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="4.6" r="2"/><circle cx="16" cy="4.6" r="2"/><path d="M8 7v5l-2 8M16 7v5l2 8"/></svg>
+        </div>
+        <div class="bfn sube" style="--i:2">
+          <div><b>Geolocalización</b><small>Conecta con quien está cerca</small></div>
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        </div>
+      </div>
+      <figure class="bols-tel"><img src="interfaz.jpg" alt="Pantalla principal de Te Cuido PV"></figure>
+      <div class="bols-col der">
+        <div class="bfn sube" style="--i:3">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/></svg>
+          <div><b>Mapa seguro</b><small>Zonas y rutas de referencia</small></div>
+        </div>
+        <div class="bfn sube" style="--i:4">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M17 5l2 2 3-3.5"/></svg>
+          <div><b>Consejeros y embajadores</b><small>Contacto directo con la sede</small></div>
+        </div>
+        <div class="bfn sube" style="--i:5">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l3 3v15H6z"/><path d="M9 9h6M9 13h6M9 17h4"/></svg>
+          <div><b>Recursos y reportes</b><small>Orientación, protocolos y seguimiento</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="pie"><span>Seis funciones, un mismo sistema. <strong>Cada función conecta personas, no solo entrega información.</strong></span></p>
+</section>
+
+<!-- 8 · ASÍ SE VIVE LA EXPERIENCIA + PROTOTIPO -->
 <section class="slide claro" data-pitch="1" aria-label="Cómo funciona y prototipo">
   <header class="cab">
-    <h2 class="titulo">Así funciona — y ya existe</h2>
+    <h2 class="titulo">Así se vive la experiencia</h2>
   </header>
   <div class="cuerpo">
     <div class="cf-flujo">
-      <p class="frase">Un gesto activa la red de cuidado.</p>
+      <p class="frase">Un gesto activa la red, <strong>y alguien cercano responde.</strong></p>
       <ol>
         <li>El estudiante solicita apoyo</li>
         <li>Comparte su ubicación</li>
         <li>La comunidad cercana recibe la alerta</li>
         <li>Una persona responde y acompaña</li>
       </ol>
-      <p class="cf-extra">Y alrededor: Caminemos Juntos, mapa seguro, consejeros y embajadores, recursos y reportes. Todo, partes de una misma red.</p>
     </div>
     <div class="cf-vid">
       <div class="fono">
@@ -536,42 +720,31 @@ body{background:#0d0f11;color:var(--carbon);font-family:var(--f-txt);overflow:hi
       </div>
     </div>
   </div>
-  <div class="pie proto-seq">
-    <span class="pn"><i>1</i>Prototipo funcional</span>
-    <span class="pa" aria-hidden="true">›</span>
-    <span class="pn"><i>2</i>Desarrollado con estudiantes de Informática</span>
-    <span class="pa" aria-hidden="true">›</span>
-    <span class="pn"><i>3</i>Perfiles de estudiante, funcionario y administración</span>
+  <div class="pcards">
+    <div class="pc"><i>1</i><span>El prototipo ya existe</span></div>
+    <div class="pc"><i>2</i><span>Desarrollado con estudiantes de Informática</span></div>
+    <div class="pc pc-fin"><i>3</i><span>El siguiente paso es probarlo en trayectos reales</span></div>
   </div>
 </section>
 
-<!-- 8 · QUÉ QUEREMOS COMPROBAR -->
-<section class="slide oscuro sl-preg" data-osc="1" data-pitch="1" aria-label="Qué queremos comprobar">
-  <header class="cab"><h2 class="titulo">Qué queremos comprobar</h2></header>
+<!-- 9 · PLAN DE PROTOTIPADO -->
+<section class="slide blanco" data-pitch="1" aria-label="Plan de prototipado">
+  <header class="cab">
+    <h2 class="titulo">Plan de prototipado</h2>
+    <p class="sub">Qué queremos aprender con el piloto</p>
+  </header>
   <div class="cuerpo">
-    <p class="preg-q">¿La comunidad <strong>responderá</strong> cuando un estudiante necesite apoyo?</p>
-    <div class="preg-lado">
-      <p class="intro">No basta con saber si la aplicación funciona. Necesitamos comprobar si la comunidad se activa.</p>
-      <div class="preg-estaciones">
-        <div class="pest p1">
-          <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.2"/><path d="M3 19c0-3 2.5-5.5 6-5.5s6 2.5 6 5.5"/><path d="M15.5 19c0-1.8.8-3.3 2-4.2"/></svg></span>
-          <div class="pt"><b>Preparar</b><span>Reclutar y capacitar la red</span></div>
-        </div>
-        <div class="pest p2">
-          <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span>
-          <div class="pt"><b>Activar</b><span>Uso real en los trayectos</span></div>
-        </div>
-        <div class="pest p3">
-          <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 19V5M4 19h16M8 16v-5M12 16V8M16 16v-3"/></svg></span>
-          <div class="pt"><b>Evaluar</b><span>Medir y decidir continuidad</span></div>
-        </div>
-      </div>
+    <div class="plan5">
+      <div class="pl sube" style="--i:0"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v5M5 12H3M21 12h-2"/><circle cx="12" cy="14" r="4"/></svg><b>Hipótesis</b><p>Creemos que, si existe un canal simple para pedir y ofrecer ayuda, la comunidad activará y responderá solicitudes reales de apoyo durante los trayectos.</p></div>
+      <div class="pl sube" style="--i:1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19h16M6 19V9M12 19V5M18 19v-7"/></svg><b>Experimento</b><p>Piloto de tres meses en Plaza Vespucio, con estudiantes vespertinos, embajadores de bienestar y consejeros, usando el prototipo en trayectos reales.</p></div>
+      <div class="pl sube" style="--i:2"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg><b>Métricas</b><p>Usuarios registrados y activos, solicitudes generadas y respondidas, tiempo de primera respuesta y percepción de acompañamiento.</p></div>
+      <div class="pl sube" style="--i:3"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><b>Criterio de validación</b><p>Tendremos evidencia favorable si las solicitudes reciben respuesta oportuna de la comunidad y mejora la percepción de acompañamiento.</p></div>
+      <div class="pl sube" style="--i:4"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/></svg><b>Requerimientos</b><p>Desarrollo técnico, infraestructura, datos institucionales, apoyo de la sede, red de embajadores y campaña de activación.</p></div>
     </div>
   </div>
-  <p class="pie">Piloto de tres meses en Plaza Vespucio · comunidad estudiantil, consejeros y embajadores · trayectos reales.</p>
 </section>
 
-<!-- 9 · CÓMO MEDIREMOS EL ÉXITO -->
+<!-- 10 · CÓMO MEDIREMOS EL ÉXITO -->
 <section class="slide claro sl-kpis" data-pitch="1" aria-label="Cómo mediremos el éxito">
   <header class="cab">
     <h2 class="titulo">Cómo mediremos el éxito</h2>
@@ -605,87 +778,89 @@ body{background:#0d0f11;color:var(--carbon);font-family:var(--f-txt);overflow:hi
       </div>
     </div>
   </div>
-  <p class="pie">El éxito no se mide en descargas. <strong>Se mide en respuesta.</strong></p>
+  <p class="pie"><span>El éxito no se mide en descargas, <strong>se mide en uso y en respuesta de la comunidad.</strong></span></p>
 </section>
 
-<!-- 10 · INVERSIÓN E IMPACTO -->
-<section class="slide blanco" data-pitch="1" aria-label="Inversión e impacto">
+<!-- 11 · QUÉ GANA DUOC UC -->
+<section class="slide sl-gana claro" data-pitch="1" aria-label="Qué gana Duoc UC">
+  <div class="gana-foto" aria-hidden="true"></div>
+  <div class="gana-velo" aria-hidden="true"></div>
   <header class="cab">
-    <h2 class="titulo">Qué financia el Comité</h2>
-    <p class="sub">Una inversión para validar el piloto y generar evidencia institucional.</p>
+    <h2 class="titulo">Qué gana Duoc UC</h2>
+    <p class="sub">Lo que queda en la institución después del piloto</p>
   </header>
   <div class="cuerpo">
-    <div class="inv">
-      <p class="monto">$3.612.000<span>Pesos chilenos · total solicitado</span></p>
-      <div class="cat" style="--p:58">
-        <div class="head"><div class="izq"><b>Equipo técnico y desarrollo</b><span class="cif">$2.094.720</span></div><span class="pct">58%</span></div>
-        <div class="barra"><i></i></div>
-        <p>Prototipo estable para uso real.</p>
-      </div>
-      <div class="cat" style="--p:25.7">
-        <div class="head"><div class="izq"><b>Difusión y activación</b><span class="cif">$930.000</span></div><span class="pct">25,7%</span></div>
-        <div class="barra"><i></i></div>
-        <p>Comunidad informada, capacitada y dispuesta a participar.</p>
-      </div>
-      <div class="cat" style="--p:16.3">
-        <div class="head"><div class="izq"><b>Infraestructura tecnológica</b><span class="cif">$587.280</span></div><span class="pct">16,3%</span></div>
-        <div class="barra"><i></i></div>
-        <p>Alertas, ubicación, trazabilidad y continuidad.</p>
-      </div>
-      <button class="btn-modal" id="abrirModal">Ver detalle del presupuesto</button>
-    </div>
-    <div class="gana sube" style="--i:1">
-      <p class="et">Qué gana Duoc UC</p>
+    <div class="gana2">
       <ul>
-        <li>Mayor percepción de acompañamiento</li>
-        <li>Mayor sentido de pertenencia</li>
-        <li>Evidencia institucional</li>
-        <li>Aprendizaje para decidir continuidad</li>
-        <li>Potencial de adaptación a otras sedes</li>
+        <li class="sube" style="--i:0">Mayor bienestar estudiantil</li>
+        <li class="sube" style="--i:1">Mayor sentido de pertenencia</li>
+        <li class="sube" style="--i:2">Comunidad más cohesionada</li>
+        <li class="sube" style="--i:3">Mejor experiencia estudiantil</li>
+        <li class="sube" style="--i:4">Evidencia para decidir continuidad</li>
+        <li class="sube" style="--i:5">Potencial de adaptación a otras sedes</li>
       </ul>
-      <p class="frase">La aplicación es el vehículo. <strong class="verde">El resultado es una comunidad que sabe cuidarse.</strong></p>
+      <p class="gana-frase">La aplicación es el vehículo, <strong>la innovación es transformar una comunidad pasiva en una comunidad que se cuida activamente.</strong></p>
     </div>
   </div>
-  <p class="pie"><strong>Si el piloto funciona, Duoc UC no obtiene solo una aplicación: obtiene evidencia para construir un modelo de cuidado replicable.</strong> No prometemos escalamiento automático.</p>
 </section>
 
-<!-- 11 · SOLICITUD -->
-<section class="slide sl-solicitud oscuro" data-osc="1" data-pitch="1" aria-label="Solicitud">
-  <img class="sol-logo" src="logo.png" alt="Duoc UC">
-  <header class="cab"><h2 class="titulo">Nuestra solicitud</h2></header>
+<!-- 12 · PROYECCIÓN -->
+<section class="slide claro" data-pitch="1" aria-label="Proyección">
+  <header class="cab">
+    <h2 class="titulo">De un piloto en Plaza Vespucio a un modelo de cuidado para Duoc UC</h2>
+  </header>
   <div class="cuerpo">
-    <div class="sol">
-      <p class="frase">Solicitamos validar Te Cuido PV con un <strong>piloto de tres meses</strong> en Plaza Vespucio.</p>
-      <p class="monto">$3.612.000</p>
-      <ul class="sol-resp">
-        <li>Problema validado</li><li>Comunidad dispuesta a ayudar</li><li>Prototipo existente</li><li>Piloto medible</li>
-      </ul>
+    <div class="proy3">
+      <div class="pr3 sube" style="--i:0"><b>1 · Piloto Plaza Vespucio</b><p>Tres meses de uso real con la comunidad vespertina, consejeros y embajadores.</p></div>
+      <div class="pr3 sube" style="--i:1"><b>2 · Consolidación en la sede</b><p>Ajustes de accesibilidad y usabilidad, con la red de embajadores capacitada.</p></div>
+      <div class="pr3 sube" style="--i:2"><b>3 · Potencial de adaptación</b><p>Toda sede tiene trayectos y comunidad, el aprendizaje puede viajar con ella.</p></div>
     </div>
   </div>
-  <div class="sol-final">
-    <p class="cl">No estamos solicitando solo recursos.</p>
-    <p class="cf">Estamos solicitando la oportunidad de <strong>transformar cercanía en cuidado.</strong></p>
+  <div class="pie pie-2">
+    <p class="p1">No estamos construyendo una aplicación, <strong>estamos validando una forma de activar el cuidado comunitario.</strong></p>
+    <p class="p2">Potencial sujeto a los resultados del piloto.</p>
   </div>
 </section>
 
-<!-- 12 · EQUIPO Y FRASE FINAL -->
-<section class="slide sl-equipo oscuro" data-osc="1" data-pitch="1" aria-label="Equipo y cierre">
+<!-- 13 · CIERRE CIRCULAR -->
+<section class="slide sl-circ oscuro" data-osc="1" data-pitch="1" aria-label="Volvamos al comienzo">
+  <div class="circ-foto" aria-hidden="true"></div>
+  <div class="circ-velo" aria-hidden="true"></div>
+  <header class="cab"><h2 class="titulo">Volvamos al comienzo</h2></header>
+  <div class="cuerpo">
+    <div class="circ">
+      <p style="--i:0">En esos días, la ayuda llegó de desconocidos.</p>
+      <p style="--i:1">La próxima vez, debería poder activarse desde su propia comunidad.</p>
+      <p class="eso" style="--i:2">Eso es Te Cuido PV.</p>
+    </div>
+  </div>
+  <p class="pie"><span>Una comunidad que sabe cuidarse.</span></p>
+</section>
+
+<!-- 14 · EQUIPO Y FRASE FINAL -->
+<section class="slide sl-equipo oscuro" data-osc="1" data-pitch="1" aria-label="Equipo">
+  <div class="eq-foto" aria-hidden="true"></div>
+  <div class="eq-velo" aria-hidden="true"></div>
   <div class="eq-frase">
-    <p class="cl">No decimos “ten cuidado”.</p>
-    <p class="cf">Decimos <strong>“te cuido”.</strong></p>
+    <p class="cf">No decimos “ten cuidado”, <strong>decimos “te cuido”.</strong></p>
   </div>
   <div class="cuerpo">
     <div class="equipo-final">
-      <p class="ef-et">El equipo</p>
       <div class="ef-row">
         <figure class="ef-per"><img src="equipo1.jpg" alt="Frida Guzmán"><b>Frida Guzmán</b><span>Directora de Carrera</span></figure>
-        <figure class="ef-per"><img src="equipo2.jpg" alt="Felipe Sandoval"><b>Felipe Sandoval</b><span>Asuntos Estudiantiles</span></figure>
-        <figure class="ef-per"><img src="equipo3.jpg" alt="Andrea Flores"><b>Andrea Flores</b><span>Estudiante · consejera</span></figure>
+        <figure class="ef-per"><img src="equipo2.jpg" alt="Felipe Sandoval"><b>Felipe Sandoval</b><span>Coordinador de Asuntos Estudiantiles</span></figure>
+        <figure class="ef-per"><img src="equipo3.jpg" alt="Andrea Flores"><b>Andrea Flores</b><span>Estudiante de Ing. en Marketing Digital</span></figure>
         <figure class="ef-per"><img src="equipo4.jpg" alt="Diego Garcés"><b>Diego Garcés</b><span>Docente de Informática</span></figure>
       </div>
-      <p class="ef-apoyo">Con el apoyo de Renato Alfaro y Benjamín Morales, estudiantes de Informática.</p>
+      <p class="ef-apoyo">Prototipo desarrollado con el apoyo de Renato Alfaro y Benjamín Morales, estudiantes de Informática.</p>
     </div>
   </div>
+</section>
+
+
+<!-- 15 · IMAGEN DE CIERRE -->
+<section class="slide sl-cierre oscuro" data-osc="1" data-pitch="1" aria-label="Cierre">
+  <img class="cierre-img" src="cierre.jpg" alt="Duoc UC · Cercanía. Liderazgo. Futuro.">
 </section>
 
 <!-- ========== ANEXOS (fuera del pitch) ========== -->
@@ -699,14 +874,13 @@ body{background:#0d0f11;color:var(--carbon);font-family:var(--f-txt);overflow:hi
       <tbody>
         <tr><td>Respuestas (estudiantes y colaboradores)</td><td>462</td></tr>
         <tr><td>Ha vivido una situación de riesgo</td><td>27%</td></tr>
-        <tr><td>De esos casos, sin apoyo institucional</td><td>87%</td></tr>
         <tr><td>Considera que sería una herramienta clave</td><td>97,2%</td></tr>
         <tr><td>Descargaría y usaría la aplicación</td><td>92% (9 de cada 10)</td></tr>
         <tr><td>Dispuesto a ayudar a otro estudiante</td><td>87%</td></tr>
       </tbody>
     </table>
   </div>
-  <p class="pie">Levantamiento cuantitativo y cualitativo. Metodología: entrevistas, observación en terreno y encuesta.</p>
+  <p class="pie"><span>Levantamiento cuantitativo y cualitativo. Metodología: entrevistas, observación en terreno y encuesta.</span></p>
 </section>
 
 <!-- A2 · Presupuesto detallado -->
@@ -732,7 +906,8 @@ body{background:#0d0f11;color:var(--carbon);font-family:var(--f-txt);overflow:hi
       </tfoot>
     </table>
   </div>
-  <p class="pie">Frida Guzmán figura como líder sin bono ($0). César Burgos participa como coinvestigador (no es parte del equipo expositor). Aporte DIAIT $0 · Escuela/Sede $0 · CAPEX $0.</p>
+  <p class="pie"><span>Frida Guzmán figura como líder sin bono ($0). César Burgos participa como coinvestigador (no es parte del equipo expositor). Aporte DIAIT $0 · Escuela/Sede $0 · CAPEX $0.</span></p>
+  <button class="btn-modal btn-modal-anx" id="abrirModal">Ver resumen por categoría</button>
 </section>
 
 <!-- A3 · Arquitectura, privacidad, límites y riesgos -->
@@ -783,7 +958,7 @@ body{background:#0d0f11;color:var(--carbon);font-family:var(--f-txt);overflow:hi
 <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mt" hidden>
   <div class="modal-box">
     <button class="modal-close" id="cerrarModal" aria-label="Cerrar">×</button>
-    <h3 id="mt">Presupuesto solicitado · $3.612.000 CLP</h3>
+    <h3 id="mt">Presupuesto del piloto · $3.612.000 CLP</h3>
     <table class="tabla">
       <thead><tr><th>Categoría</th><th>Qué habilita</th><th>Monto</th><th>%</th></tr></thead>
       <tbody>
@@ -791,7 +966,7 @@ body{background:#0d0f11;color:var(--carbon);font-family:var(--f-txt);overflow:hi
         <tr><td>Difusión y activación</td><td>Comunidad informada y dispuesta a participar</td><td>$930.000</td><td>25,7%</td></tr>
         <tr><td>Infraestructura tecnológica</td><td>Alertas, ubicación, trazabilidad, continuidad</td><td>$587.280</td><td>16,3%</td></tr>
       </tbody>
-      <tfoot><tr class="tot"><th colspan="2">Total solicitado</th><td>$3.612.000</td><td>100%</td></tr></tfoot>
+      <tfoot><tr class="tot"><th colspan="2">Total del piloto</th><td>$3.612.000</td><td>100%</td></tr></tfoot>
     </table>
     <p class="npie">Valores tomados sin modificación de la maqueta presupuestaria ICORP. El desglose línea a línea está en el Anexo 2.</p>
   </div>
@@ -803,11 +978,11 @@ body{background:#0d0f11;color:var(--carbon);font-family:var(--f-txt);overflow:hi
   <button class="hud-btn" id="btnFull" aria-label="Pantalla completa">⛶</button>
   <span class="hud-sep"></span>
   <button class="hud-btn" id="btnPrev" aria-label="Anterior">‹</button>
-  <span class="hud-count" id="hudCount">1/12</span>
+  <span class="hud-count" id="hudCount">1/15</span>
   <button class="hud-btn" id="btnNext" aria-label="Siguiente">›</button>
 </div>
 <div class="cronometro" id="crono" title="Cronómetro del pitch (T para iniciar/pausar)"><span id="cronoT">0:00</span><button id="cronoR">reiniciar</button></div>
-<div class="progreso" role="progressbar" aria-valuemin="1" aria-valuemax="12" aria-valuenow="1"><i id="barra"></i></div>
+<div class="progreso" role="progressbar" aria-valuemin="1" aria-valuemax="15" aria-valuenow="1"><i id="barra"></i></div>
 <nav class="indice" id="indice" hidden aria-label="Índice"><div id="indiceLista"></div></nav>
 <aside class="notas" id="notas" hidden aria-label="Notas del presentador">
   <header><b id="nTit"></b><span id="nDur"></span></header>
@@ -830,23 +1005,26 @@ var total=slides.length, actual=0;
 var pitchCount=slides.filter(function(s){return s.dataset.pitch==='1';}).length;
 var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-/* Notas · 11 pitch + anexos · guion ≈ 6:30 */
+/* Notas · 15 diapositivas de pitch + 4 anexos · guion ≈ 6:40 */
 var NOTAS=[
- {t:'Portada',d:'0:20',m:'Te Cuido PV: para que ningún estudiante enfrente solo su trayecto.',s:'Presentarnos y nombrar el propósito, no la app. “Venimos a hablar de personas y de trayectos.”',x:'“Y esto nace de historias reales.”',o:'No mencionar todavía funcionalidades.'},
- {t:'El origen',d:'0:40',m:'Tres casos reales de la sede.',s:'Un caso contado en 10 s (silla de ruedas). Los otros dos, una línea. Rematar: la ayuda estaba cerca, pero nadie sabía que era necesaria.',x:'“¿Dónde pasa esto? Aquí, todos los días.”',o:'No leer los tres relatos completos: están en las notas.'},
- {t:'El problema ocurre aquí',d:'0:35',m:'El acompañamiento termina en la sede; la vulnerabilidad sigue en el trayecto.',s:'Mostrar el mapa: 610 m y 485 m a los dos metros. Nombrar 2-3 escenarios. Aclarar el límite: no nos hacemos cargo de la seguridad del sector.',x:'“¿Es frecuente? Lo medimos.”',o:'No enumerar los seis escenarios uno por uno.'},
- {t:'La evidencia',d:'0:45',m:'27% vivió riesgo · 87% sin apoyo · 92% la usaría.',s:'Recorrer las barras. Detenerse en el contraste: 87% no recibió apoyo / 87% lo daría. Ese contraste es el corazón del relato.',x:'“Y ahí está la oportunidad.”',o:'El 97,2% y las 462 solo como respaldo.'},
- {t:'El insight',d:'0:30',m:'La comunidad quiere ayudarse. La red ya existe.',s:'Pausa. Dejar que los puntos se conecten. No hay que crear la comunidad: hay que activarla. Aquí se cruza del problema a la oportunidad.',x:'“¿Y cómo la activamos? Con Te Cuido PV.”',o:'No adelantar funcionalidades.'},
- {t:'La propuesta',d:'0:35',m:'Conecta a quien necesita apoyo con su comunidad cercana.',s:'Recorrer Antes → Te Cuido PV → Después. La tecnología conecta; la comunidad cuida. Decir el límite: no reemplaza emergencias.',x:'“Veamos cómo funciona.”',o:'No centrarse en el botón SOS.'},
- {t:'Cómo funciona + prototipo',d:'0:55',m:'Un gesto activa la red. Y el prototipo ya existe.',s:'Nombrar los 4 pasos en 15 s y dejar correr el clip (~40 s) sin hablar encima. Cerrar: lo hicieron estudiantes de la sede, con tres perfiles.',x:'“¿Y qué queremos comprobar con la plata?”',o:'No listar todas las funciones como productos.'},
- {t:'Qué queremos comprobar',d:'0:35',m:'¿La comunidad responderá cuando alguien necesite apoyo?',s:'Formular la pregunta y dejarla. No es una prueba técnica: es probar si la comunidad se activa. Preparar → Activar → Evaluar.',x:'“¿Y cómo lo medimos?”',o:'No explicar toda la metodología de Design Thinking.'},
- {t:'Cómo mediremos el éxito',d:'0:35',m:'40% activos · 90% respondidas · <5 min · NPS ≥ 40. Metas propuestas.',s:'Cuatro indicadores, rápido. Recalcar: son metas, no resultados. El éxito se mide en respuesta, no en descargas.',x:'“¿Cuánto cuesta y qué habilita?”',o:'El resto de KPIs queda en el Anexo 4.'},
- {t:'Inversión e impacto',d:'0:50',m:'$3.612.000 · desarrollo, activación, infraestructura → resultado.',s:'Monto y tres categorías con lo que habilita cada una. Luego, qué gana Duoc. La app es el vehículo; el resultado es una comunidad que sabe cuidarse.',x:'“Entonces, esto es lo que pedimos.”',o:'No abrir la tabla completa: está en el modal y el Anexo 2.'},
- {t:'Solicitud',d:'0:30',m:'$3.612.000 para el piloto. No pedimos solo recursos, sino la oportunidad de transformar cercanía en cuidado.',s:'El monto y los cuatro respaldos, directo. Rematar con la frase de cercanía → cuidado.',x:'“Y detrás de esto hay un equipo.”',o:'No mostrar aquí al equipo: va en la lámina siguiente.'},
- {t:'Equipo y cierre',d:'0:18',m:'No decimos “ten cuidado”. Decimos “te cuido”. Y este es el equipo.',s:'Frase final con calma, dos segundos de silencio, y presentar al equipo en una línea. Gracias.',x:'(fin del pitch · abrir preguntas con la pantalla de anexos)',o:'No agregar nada después.'},
- /* anexos (para las preguntas · fuera de los 7 min) */
- {t:'Anexo 1 · Encuesta',d:'—',m:'Resultados completos · 462 respuestas.',s:'',x:'',o:''},
- {t:'Anexo 2 · Presupuesto detallado',d:'—',m:'Partidas línea a línea.',s:'',x:'',o:''},
+ {t:'Portada',d:'0:15',m:'Te Cuido PV, una red comunitaria para los trayectos.',s:'Presentarnos en una línea. No hablamos de una app, hablamos de personas y de trayectos.',x:'“Este proyecto nace de historias reales.”',o:'No adelantar funcionalidades.'},
+ {t:'Historias reales',d:'0:40',m:'Cuatro casos reales de la sede.',s:'En orden: silla de ruedas sin ascensor, estudiantes vespertinos que vuelven solos, caída con muletas camino a la sede y el estudiante atropellado cerca de la sede. Rematar: la ayuda estaba cerca, pero nadie sabía que era necesaria.',x:'“¿Dónde ocurre esto? Aquí.”',o:'No dar detalles adicionales del accidente.'},
+ {t:'El problema ocurre aquí',d:'0:20',m:'610 m (≈12 min) y 485 m (≈10 min) fuera de la red de apoyo.',s:'Mostrar el mapa y nombrar dos o tres escenarios. Aclarar el límite: no nos hacemos cargo de la seguridad del sector, ampliamos la capacidad de acompañamiento de la comunidad.',x:'“¿Es frecuente? Lo medimos.”',o:'No enumerar todos los escenarios.'},
+ {t:'La evidencia',d:'0:35',m:'27% vivió una situación de riesgo; 87% está dispuesto a ayudar.',s:'Partir por el 27%. Luego el dato central: 87% estaría dispuesto a ayudar a otro estudiante. Cerrar: el problema es real y frecuente y la comunidad ya está dispuesta a responder.',x:'“Y ahí está la oportunidad.”',o:'El 97,2% y el 92% solo como respaldo.'},
+ {t:'La oportunidad',d:'0:20',m:'La red ya existe, solo falta activarla.',s:'Pausa breve. No hay que crear la comunidad, hay que activarla.',x:'“¿Y cómo la activamos?”',o:'—'},
+ {t:'Qué es Te Cuido PV',d:'0:25',m:'Antes, activación y acompañamiento.',s:'Recorrer las tres tarjetas. Decir el límite: no reemplaza a los servicios de emergencia ni a los protocolos institucionales.',x:'“¿Y qué incluye la solución?”',o:'No centrarse en el botón SOS.'},
+ {t:'Red de cuidado en el bolsillo',d:'0:25',m:'Seis funciones, un mismo sistema.',s:'Una línea por función, sin detenerse. Rematar: cada función conecta personas, no solo entrega información.',x:'“Veamos cómo se vive.”',o:'No explicar el recorrido del usuario, eso viene en la siguiente.'},
+ {t:'Así se vive la experiencia',d:'0:45',m:'Cuatro pasos y el prototipo funcionando.',s:'Nombrar los cuatro pasos en 10 segundos y dejar correr el clip (~40 s) sin hablar encima. Cerrar con las tres tarjetas del pie.',x:'“¿Qué queremos aprender con el piloto?”',o:'No repetir las funcionalidades.'},
+ {t:'Plan de prototipado',d:'0:30',m:'Hipótesis, experimento, métricas, criterio y requerimientos.',s:'Seguir el formato del comité, una línea por bloque. Subrayar el criterio de validación. Aquí se explica QUÉ se medirá.',x:'“¿Y cuáles son las metas?”',o:'No detallar la metodología completa.'},
+ {t:'Cómo mediremos el éxito',d:'0:28',m:'Metas propuestas: 40%, 90%, <5 min, NPS ≥ 40.',s:'Aquí se dicen las METAS, no las métricas. Recordar que son propuestas, no resultados.',x:'“¿Y qué queda en la institución?”',o:'El resto de KPIs queda en el Anexo 4.'},
+ {t:'Qué gana Duoc UC',d:'0:25',m:'Bienestar, pertenencia, cohesión, experiencia, evidencia y adaptación.',s:'No leer los seis: destacar bienestar, pertenencia y evidencia para decidir continuidad. Cerrar con la frase de la innovación.',x:'“¿Y después del piloto?”',o:'El presupuesto no se menciona; está en el Anexo 2 y en la ventana de detalle.'},
+ {t:'Proyección',d:'0:22',m:'Piloto, consolidación y potencial de adaptación.',s:'Aclarar que el potencial está sujeto a los resultados del piloto.',x:'“Permitanme cerrar donde empezamos.”',o:'No prometer escalamiento automático.'},
+ {t:'Volvamos al comienzo',d:'0:25',m:'La ayuda llegó de desconocidos; la próxima vez, de su comunidad.',s:'Decir las líneas con calma y dejar dos segundos de silencio antes de avanzar.',x:'“Y detrás de esto hay un equipo.”',o:'No agregar información nueva.'},
+ {t:'Equipo',d:'0:18',m:'Una red entre dirección, asuntos estudiantiles, estudiantes y docencia.',s:'Presentar los cuatro roles en una línea y mencionar el apoyo de Renato y Benjamín. Cerrar: no decimos “ten cuidado”, decimos “te cuido”.',x:'(imagen de cierre)',o:'No agregar nada nuevo.'},
+ {t:'Cierre',d:'0:05',m:'Imagen institucional de cierre.',s:'Gracias. Quedar en silencio sobre la imagen mientras se abren las preguntas.',x:'(fin del pitch)',o:'Los anexos se abren desde el índice.'},
+ /* anexos (para las preguntas, fuera de los 7 min) */
+ {t:'Anexo 1 · Encuesta',d:'—',m:'Resultados completos sobre 462 respuestas.',s:'',x:'',o:''},
+ {t:'Anexo 2 · Presupuesto detallado',d:'—',m:'Partidas línea a línea. Botón para el resumen por categoría.',s:'',x:'',o:''},
  {t:'Anexo 3 · Arquitectura, privacidad, límites y riesgos',d:'—',m:'Stack técnico, datos, alcance y mitigaciones.',s:'',x:'',o:''},
  {t:'Anexo 4 · Metodología y plan de piloto',d:'—',m:'Hipótesis, journey, etapas y KPIs completos.',s:'',x:'',o:''}
 ];
@@ -907,7 +1085,7 @@ var NOTAS=[
 var barra=document.getElementById('barra'), prog=document.querySelector('.progreso'),
     hud=document.getElementById('hud'), hudCount=document.getElementById('hudCount'),
     video=document.getElementById('video');
-var insightIdx=4, videoIdx=6, clipLim=40, clipOn=true;
+var insightIdx=4, videoIdx=7, clipLim=40, clipOn=true;
 
 function ir(n){
   n=Math.max(0,Math.min(total-1,n));
@@ -970,8 +1148,9 @@ crono.addEventListener('click',function(e){ if(e.target===cronoR) return; toggle
 cronoR.addEventListener('click',function(e){ e.stopPropagation(); seg=0; pintarCrono(); if(tick){clearInterval(tick);tick=null;crono.classList.remove('run');} });
 
 var modal=document.getElementById('modal'), ab=document.getElementById('abrirModal'), ce=document.getElementById('cerrarModal');
-function toggleModal(a){ modal.hidden=!a; if(a) ce.focus(); else ab.focus(); }
-ab.addEventListener('click',function(){toggleModal(true);});
+function toggleModal(a){ modal.hidden=!a; if(a){ ce.focus(); } else if(ab){ ab.focus(); } }
+if(ab) ab.addEventListener('click',function(){toggleModal(true);});
+window.__verPresupuesto=function(){ toggleModal(true); };
 ce.addEventListener('click',function(){toggleModal(false);});
 modal.addEventListener('click',function(e){ if(e.target===modal) toggleModal(false); });
 
